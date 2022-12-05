@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-RIBs_memo-RIBs_memoUITests/Pods-RIBs_memo-RIBs_memoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RIBs/RIBs.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
