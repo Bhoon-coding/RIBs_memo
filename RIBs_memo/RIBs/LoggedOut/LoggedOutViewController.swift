@@ -10,7 +10,7 @@ import RxSwift
 import UIKit
 
 protocol LoggedOutPresentableListener: AnyObject {
-    
+    func handleLogin(player1Name: String, player2Name: String)
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
@@ -23,6 +23,7 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     weak var listener: LoggedOutPresentableListener?
     
     @IBAction func tapLoginButton(_ sender: Any) {
-        
+        listener?.handleLogin(player1Name: player1NameTF.text ?? "",
+                              player2Name: player2NameTF.text ?? "")
     }
 }
