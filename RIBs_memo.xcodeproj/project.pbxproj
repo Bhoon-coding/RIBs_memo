@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		218B8B1DCD0202C3DA7EC4D3 /* Pods_RIBs_memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82D2FDA95E4D11141A8378 /* Pods_RIBs_memo.framework */; };
 		AF8B59C50A6877828964BB35 /* Pods_RIBs_memoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474BBBFB6D4A549A9803317F /* Pods_RIBs_memoTests.framework */; };
+		E18336462940E68E007B4EE7 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336422940E68E007B4EE7 /* RootRouter.swift */; };
+		E18336472940E68E007B4EE7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336432940E68E007B4EE7 /* RootViewController.swift */; };
+		E18336482940E68E007B4EE7 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336442940E68E007B4EE7 /* RootBuilder.swift */; };
+		E18336492940E68E007B4EE7 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336452940E68E007B4EE7 /* RootInteractor.swift */; };
 		E1BD932A293E3C4600D829C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD9329293E3C4600D829C4 /* AppDelegate.swift */; };
 		E1BD932C293E3C4600D829C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD932B293E3C4600D829C4 /* SceneDelegate.swift */; };
 		E1BD932E293E3C4600D829C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD932D293E3C4600D829C4 /* ViewController.swift */; };
@@ -52,6 +56,10 @@
 		8E32E19E42FC623E8A0098A1 /* Pods-RIBs_memoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIBs_memoTests.debug.xcconfig"; path = "Target Support Files/Pods-RIBs_memoTests/Pods-RIBs_memoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E82D2FDA95E4D11141A8378 /* Pods_RIBs_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RIBs_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F45C6D6A3B1EE9B5212078 /* Pods_RIBs_memo_RIBs_memoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RIBs_memo_RIBs_memoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18336422940E68E007B4EE7 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		E18336432940E68E007B4EE7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E18336442940E68E007B4EE7 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		E18336452940E68E007B4EE7 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		E1BD9326293E3C4600D829C4 /* RIBs_memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIBs_memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BD9329293E3C4600D829C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BD932B293E3C4600D829C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +132,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E18336412940E683007B4EE7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E18336422940E68E007B4EE7 /* RootRouter.swift */,
+				E18336432940E68E007B4EE7 /* RootViewController.swift */,
+				E18336442940E68E007B4EE7 /* RootBuilder.swift */,
+				E18336452940E68E007B4EE7 /* RootInteractor.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		E1BD931D293E3C4600D829C4 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +212,7 @@
 		E1E9685C293E43E200CDEF61 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				E18336412940E683007B4EE7 /* Root */,
 				E1E9685B293E43D900CDEF61 /* LoggedOut */,
 			);
 			path = RIBs;
@@ -438,11 +458,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18336462940E68E007B4EE7 /* RootRouter.swift in Sources */,
 				E1BD932E293E3C4600D829C4 /* ViewController.swift in Sources */,
+				E18336492940E68E007B4EE7 /* RootInteractor.swift in Sources */,
+				E18336472940E68E007B4EE7 /* RootViewController.swift in Sources */,
 				E1BD932A293E3C4600D829C4 /* AppDelegate.swift in Sources */,
 				E1E96859293E43C800CDEF61 /* LoggedOutBuilder.swift in Sources */,
 				E1BD932C293E3C4600D829C4 /* SceneDelegate.swift in Sources */,
 				E1E96856293E43C800CDEF61 /* LoggedOutRouter.swift in Sources */,
+				E18336482940E68E007B4EE7 /* RootBuilder.swift in Sources */,
 				E1E9685A293E43C800CDEF61 /* LoggedOutInteractor.swift in Sources */,
 				E1E96858293E43C800CDEF61 /* LoggedOutViewController.swift in Sources */,
 			);
