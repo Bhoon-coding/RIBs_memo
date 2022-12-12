@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-RIBs_memo/Pods-RIBs_memo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/RIBs/RIBs.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

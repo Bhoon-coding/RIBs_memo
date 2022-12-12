@@ -19,14 +19,17 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
 
     weak var listener: RootPresentableListener?
     
-    let rootLabel: UILabel = UILabel()
-    
-    func layout() {
-        view.backgroundColor = .green
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
+    }
+    
+    func layout() {
+        view.backgroundColor = .systemGray
+    }
+    
+    func present(viewController: ViewControllable) {
+        viewController.uiviewController.modalPresentationStyle = .fullScreen
+        present(viewController.uiviewController, animated: false, completion: nil)
     }
 }
