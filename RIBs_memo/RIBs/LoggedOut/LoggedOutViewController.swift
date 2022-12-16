@@ -7,7 +7,6 @@
 
 import RIBs
 import RxSwift
-import RxCocoa
 import UIKit
 
 protocol LoggedOutPresentableListener: AnyObject {
@@ -25,21 +24,20 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Observable.combineLatest(emailTextField.rx.text.orEmpty, passwordTextField.rx.text.orEmpty) {
-            email, password -> Bool in
-            return LoginTextInputManager.isValidEmail(email) && LoginTextInputManager.isValidPassword(password)
-        }
-        .subscribe(onNext: { [weak self] isValid in
-            self?.loginButton.isEnabled = isValid
-        }).disposed(by: disposeBag)
-        
-        loginButton.rx.tap.map { [weak self] _ in
-            return (self?.emailTextField.text ?? "", self?.passwordTextField.text ?? "")
-        }.subscribe(onNext: { email, password in
-            
-        }).disposed(by: disposeBag)
-        
+        bind()
+        setNavigationBar()
+        view.backgroundColor = .white
+    }
+    
+    private func setNavigationBar() {
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "MintColor") ?? .white
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationItem.title = "Simple Memo"
+    }
+    
+    
+    func bind() {
+        Observable.combineLatest(emailTextField.rx.text.orEmpty, passwordTextField.rx.base.text.orEmp, resultSelector: <#T##(ObservableType.E, ObservableType.E) throws -> _#>)
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {

@@ -7,7 +7,7 @@ target 'RIBs_memo' do
 
   # Pods for RIBs_memo
   pod 'RIBs', '~> 0.9'
-  pod 'RxCocoa'
+  pod 'RxCocoa', '~> 5'
 
   target 'RIBs_memoTests' do
     inherit! :search_paths
