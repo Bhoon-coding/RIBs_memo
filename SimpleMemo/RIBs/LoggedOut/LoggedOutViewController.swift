@@ -8,22 +8,13 @@ protocol LoggedOutPresentableListener: class {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     func loginDidTap(email: String, password: String)
-    func moveToSignUpDidTap()
+//    func moveToSignUpDidTap()
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
 
-    @IBOutlet weak var emailTextField: UITextField! {
-        didSet {
-            emailTextField.text = "simple@memo.com"
-        }
-    }
-    @IBOutlet weak var passwordTextField: UITextField! {
-        didSet {
-            passwordTextField.text = "12345678"
-        }
-    }
-    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     

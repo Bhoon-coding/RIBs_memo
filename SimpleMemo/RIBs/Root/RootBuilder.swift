@@ -6,11 +6,10 @@ protocol RootDependency: Dependency {
 }
 
 final class RootComponent: Component<RootDependency>, LoggedOutDependency, LoggedInDependency {
-     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
     var LoggedInViewController: LoggedInViewControllable {
         return rootViewController
     }
-    
+
     let rootViewController: RootViewController
     
     init(dependency: RootDependency, rootViewController: RootViewController) {
@@ -26,7 +25,7 @@ protocol RootBuildable: Buildable {
 }
 
 final class RootBuilder: Builder<RootDependency>, RootBuildable {
-
+    
     override init(dependency: RootDependency) {
         super.init(dependency: dependency)
     }

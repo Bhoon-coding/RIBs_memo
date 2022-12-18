@@ -22,11 +22,6 @@
 		AC3F04EF23C772BA005ED8E6 /* LoggedOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3F04EA23C772BA005ED8E6 /* LoggedOutViewController.xib */; };
 		AC3F052823C97781005ED8E6 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F052723C97781005ED8E6 /* Storyboard.swift */; };
 		AC3F052A23CA0004005ED8E6 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F052923CA0004005ED8E6 /* Color.xcassets */; };
-		AC503E7823CF522300FA1EC2 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC503E7323CF522300FA1EC2 /* SignUpRouter.swift */; };
-		AC503E7923CF522300FA1EC2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC503E7423CF522300FA1EC2 /* SignUpViewController.swift */; };
-		AC503E7A23CF522300FA1EC2 /* SignUpBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC503E7523CF522300FA1EC2 /* SignUpBuilder.swift */; };
-		AC503E7B23CF522300FA1EC2 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC503E7623CF522300FA1EC2 /* SignUpInteractor.swift */; };
-		AC503E7C23CF522300FA1EC2 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC503E7723CF522300FA1EC2 /* SignUpViewController.xib */; };
 		AC503E7E23CF5C7700FA1EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC503E7D23CF5C7700FA1EC2 /* Main.storyboard */; };
 		AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F02229A72A4001180C3 /* AppDelegate.swift */; };
 		AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F09229A72A7001180C3 /* Assets.xcassets */; };
@@ -44,16 +39,14 @@
 		C227CC6923CEDE1A00574AD0 /* AddMemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6423CEDE1A00574AD0 /* AddMemoRouter.swift */; };
 		C227CC6A23CEDE1A00574AD0 /* AddMemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C227CC6523CEDE1A00574AD0 /* AddMemoViewController.xib */; };
 		C227CC6B23CEDE1A00574AD0 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6623CEDE1A00574AD0 /* AddMemoViewController.swift */; };
-		C227CC7223CEDE3C00574AD0 /* MemosBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6D23CEDE3C00574AD0 /* MemosBuilder.swift */; };
-		C227CC7323CEDE3C00574AD0 /* MemosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6E23CEDE3C00574AD0 /* MemosRouter.swift */; };
-		C227CC7423CEDE3C00574AD0 /* MemosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */; };
-		C227CC7523CEDE3C00574AD0 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */; };
-		C227CC7623CEDE3C00574AD0 /* MemosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */; };
 		C28BFDC723D2900C002C5E5C /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC523D2900C002C5E5C /* RootInteractorTests.swift */; };
 		C28BFDC823D2900C002C5E5C /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */; };
 		C28BFDCA23D29148002C5E5C /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC923D29148002C5E5C /* Mocks.swift */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */; };
+		E17261F7294AA32A0097437D /* LogInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F4294AA32A0097437D /* LogInRouter.swift */; };
+		E17261F8294AA32A0097437D /* LogInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F5294AA32A0097437D /* LogInBuilder.swift */; };
+		E17261F9294AA32A0097437D /* LogInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F6294AA32A0097437D /* LogInInteractor.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,11 +81,6 @@
 		AC3F04EA23C772BA005ED8E6 /* LoggedOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoggedOutViewController.xib; sourceTree = "<group>"; };
 		AC3F052723C97781005ED8E6 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		AC3F052923CA0004005ED8E6 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		AC503E7323CF522300FA1EC2 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
-		AC503E7423CF522300FA1EC2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		AC503E7523CF522300FA1EC2 /* SignUpBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBuilder.swift; sourceTree = "<group>"; };
-		AC503E7623CF522300FA1EC2 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
-		AC503E7723CF522300FA1EC2 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		AC503E7D23CF5C7700FA1EC2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E1F02229A72A4001180C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,11 +100,6 @@
 		C227CC6423CEDE1A00574AD0 /* AddMemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoRouter.swift; sourceTree = "<group>"; };
 		C227CC6523CEDE1A00574AD0 /* AddMemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMemoViewController.xib; sourceTree = "<group>"; };
 		C227CC6623CEDE1A00574AD0 /* AddMemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
-		C227CC6D23CEDE3C00574AD0 /* MemosBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosBuilder.swift; sourceTree = "<group>"; };
-		C227CC6E23CEDE3C00574AD0 /* MemosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosRouter.swift; sourceTree = "<group>"; };
-		C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosInteractor.swift; sourceTree = "<group>"; };
-		C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
-		C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemosViewController.storyboard; sourceTree = "<group>"; };
 		C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28BFDBB23D1C513002C5E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28BFDC523D2900C002C5E5C /* RootInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
@@ -124,6 +107,9 @@
 		C28BFDC923D29148002C5E5C /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 		C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIBTreeViewer.swift; sourceTree = "<group>"; };
+		E17261F4294AA32A0097437D /* LogInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRouter.swift; sourceTree = "<group>"; };
+		E17261F5294AA32A0097437D /* LogInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInBuilder.swift; sourceTree = "<group>"; };
+		E17261F6294AA32A0097437D /* LogInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +177,7 @@
 				C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */,
 				AC3F04D123C4ED50005ED8E6 /* Root */,
 				AC3F04E523C77293005ED8E6 /* LoggedOut */,
-				AC503E7223CF520D00FA1EC2 /* SignUp */,
 				C214C77D23C8557F00B760DC /* LoggedIn */,
-				C227CC6C23CEDE3C00574AD0 /* Memos */,
 				C227CC6123CEDE1A00574AD0 /* AddMemo */,
 			);
 			path = RIBs;
@@ -237,18 +221,6 @@
 				AC3F052723C97781005ED8E6 /* Storyboard.swift */,
 			);
 			path = Environment;
-			sourceTree = "<group>";
-		};
-		AC503E7223CF520D00FA1EC2 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				AC503E7323CF522300FA1EC2 /* SignUpRouter.swift */,
-				AC503E7423CF522300FA1EC2 /* SignUpViewController.swift */,
-				AC503E7523CF522300FA1EC2 /* SignUpBuilder.swift */,
-				AC503E7623CF522300FA1EC2 /* SignUpInteractor.swift */,
-				AC503E7723CF522300FA1EC2 /* SignUpViewController.xib */,
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		AC7E1EF6229A72A3001180C3 = {
@@ -321,6 +293,9 @@
 				C214C77E23C8566C00B760DC /* LoggedInRouter.swift */,
 				C214C77F23C8566C00B760DC /* LoggedInBuilder.swift */,
 				C214C78023C8566C00B760DC /* LoggedInInteractor.swift */,
+				E17261F4294AA32A0097437D /* LogInRouter.swift */,
+				E17261F5294AA32A0097437D /* LogInBuilder.swift */,
+				E17261F6294AA32A0097437D /* LogInInteractor.swift */,
 			);
 			path = LoggedIn;
 			sourceTree = "<group>";
@@ -335,18 +310,6 @@
 				C227CC6623CEDE1A00574AD0 /* AddMemoViewController.swift */,
 			);
 			path = AddMemo;
-			sourceTree = "<group>";
-		};
-		C227CC6C23CEDE3C00574AD0 /* Memos */ = {
-			isa = PBXGroup;
-			children = (
-				C227CC6D23CEDE3C00574AD0 /* MemosBuilder.swift */,
-				C227CC6E23CEDE3C00574AD0 /* MemosRouter.swift */,
-				C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */,
-				C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */,
-				C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */,
-			);
-			path = Memos;
 			sourceTree = "<group>";
 		};
 		C28BFDB823D1C513002C5E5C /* SimpleMemoTests */ = {
@@ -465,10 +428,8 @@
 				AC3F04EF23C772BA005ED8E6 /* LoggedOutViewController.xib in Resources */,
 				AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */,
 				AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */,
-				AC503E7C23CF522300FA1EC2 /* SignUpViewController.xib in Resources */,
 				AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */,
 				AC503E7E23CF5C7700FA1EC2 /* Main.storyboard in Resources */,
-				C227CC7623CEDE3C00574AD0 /* MemosViewController.storyboard in Resources */,
 				AC3F052A23CA0004005ED8E6 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,7 +529,7 @@
 				AC3F04EE23C772BA005ED8E6 /* LoggedOutInteractor.swift in Sources */,
 				C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */,
 				AC3F04EC23C772BA005ED8E6 /* LoggedOutViewController.swift in Sources */,
-				C227CC7223CEDE3C00574AD0 /* MemosBuilder.swift in Sources */,
+				E17261F7294AA32A0097437D /* LogInRouter.swift in Sources */,
 				AC3F04ED23C772BA005ED8E6 /* LoggedOutBuilder.swift in Sources */,
 				C227CC6B23CEDE1A00574AD0 /* AddMemoViewController.swift in Sources */,
 				AC3F04E423C4F455005ED8E6 /* RootInteractor.swift in Sources */,
@@ -576,28 +537,23 @@
 				C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */,
 				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */,
+				E17261F8294AA32A0097437D /* LogInBuilder.swift in Sources */,
 				C227CC6723CEDE1A00574AD0 /* AddMemoBuilder.swift in Sources */,
-				C227CC7523CEDE3C00574AD0 /* MemosViewController.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
 				AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */,
-				AC503E7B23CF522300FA1EC2 /* SignUpInteractor.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
 				C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */,
-				AC503E7823CF522300FA1EC2 /* SignUpRouter.swift in Sources */,
 				AC3F052823C97781005ED8E6 /* Storyboard.swift in Sources */,
 				C227CC6923CEDE1A00574AD0 /* AddMemoRouter.swift in Sources */,
 				C214C78123C8566C00B760DC /* LoggedInRouter.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
-				AC503E7A23CF522300FA1EC2 /* SignUpBuilder.swift in Sources */,
-				AC503E7923CF522300FA1EC2 /* SignUpViewController.swift in Sources */,
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
-				C227CC7323CEDE3C00574AD0 /* MemosRouter.swift in Sources */,
 				AC3F04EB23C772BA005ED8E6 /* LoggedOutRouter.swift in Sources */,
-				C227CC7423CEDE3C00574AD0 /* MemosInteractor.swift in Sources */,
 				C227CC6823CEDE1A00574AD0 /* AddMemoInteractor.swift in Sources */,
 				AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
+				E17261F9294AA32A0097437D /* LogInInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
