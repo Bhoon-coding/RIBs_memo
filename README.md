@@ -1,5 +1,9 @@
 # SimpleMemo-RIBs
 
+- 튜토리얼 따라하면서 RIBs 익히기
+- feature/RIBs 브랜치에 push
+
+
 ## 1. 프로젝트 소개
 
 Firebase realtime database를 연습해보기 위해 [기존 MVVM로 구현했던 프로젝트](https://github.com/eunjin3786/SimpleMemo) 를
