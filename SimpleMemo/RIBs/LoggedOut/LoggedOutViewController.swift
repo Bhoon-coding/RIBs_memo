@@ -1,6 +1,7 @@
 
 import RIBs
 import RxSwift
+import RxCocoa
 import UIKit
 
 protocol LoggedOutPresentableListener: class {
@@ -47,9 +48,6 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
             self?.listener?.loginDidTap(email: email, password: password)
         }).disposed(by: bag)
         
-        signupButton.rx.tap.subscribe(onNext: { [weak self] _ in
-            self?.listener?.moveToSignUpDidTap()
-        }).disposed(by: bag)
     }
     
     func push(viewController: ViewControllable) {

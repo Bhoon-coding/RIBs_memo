@@ -4,8 +4,6 @@ import RxSwift
 protocol LoggedInRouting: Routing {
     func cleanupViews()
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-    func routeToMemosRIB()
-    func detachMemosRIB()
 }
 
 protocol LoggedInListener: class {
@@ -35,7 +33,6 @@ final class LoggedInInteractor: Interactor, LoggedInInteractable {
     
     func logOut() {
         FirebaseManager.logout()
-        router?.detachMemosRIB()
         listener?.logOut()
     }
 }

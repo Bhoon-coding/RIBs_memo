@@ -1,6 +1,6 @@
 import RIBs
 
-protocol LoggedInInteractable: Interactable, MemosListener {
+protocol LoggedInInteractable: Interactable {
     var router: LoggedInRouting? { get set }
     var listener: LoggedInListener? { get set }
 }
@@ -14,17 +14,13 @@ protocol LoggedInViewControllable: ViewControllable {
 }
 
 final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
-
+    
     private let viewController: LoggedInViewControllable
-    private let memosBuilder: MemosBuildable
-    private var memosRouting: MemosRouting?
     
     // TODO: Constructor inject child builder protocols to allow building children.
     init(interactor: LoggedInInteractable,
-         viewController: LoggedInViewControllable,
-         memosBuilder: MemosBuildable) {
+         viewController: LoggedInViewControllable) {
         self.viewController = viewController
-        self.memosBuilder = memosBuilder
         super.init(interactor: interactor)
         interactor.router = self
     }
@@ -36,25 +32,6 @@ final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
     
     override func didLoad() {
         super.didLoad()
-        routeToMemosRIB()
     }
     
-    func routeToMemosRIB() {
-        let memosRouting = memosBuilder.build(withListener: interactor)
-        self.memosRouting = memosRouting
-        attachChild(memosRouting)
-        let navigationController = UINavigationController(root: memosRouting.viewControllable)
-        viewController.present(viewController: navigationController)
-    }
-    
-    func detachMemosRIB() {
-        guard let memosRouting = memosRouting else { return }
-        detachChild(memosRouting)
-        if let navigationController = memosRouting.viewControllable.uiviewController.navigationController {
-            viewController.dismiss(viewController: navigationController)
-        } else {
-            viewController.dismiss(viewController: memosRouting.viewControllable)
-        }
-        self.memosRouting = nil
-    }
 }
