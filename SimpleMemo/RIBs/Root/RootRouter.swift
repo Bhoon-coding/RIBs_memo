@@ -53,5 +53,10 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
             viewController.dismiss(viewController: loggedOutRouting.viewControllable)
             self.loggedOutRouting = nil
         }
+        
+        let loggedInRouting = loggedInBuilder.build(withListener: interactor)
+        
+        attachChild(loggedInRouting)
+        /// view-less RIB으로 present 생략
     }
 }

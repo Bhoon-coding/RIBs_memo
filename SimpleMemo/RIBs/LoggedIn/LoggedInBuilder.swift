@@ -1,10 +1,8 @@
 import RIBs
 
 protocol LoggedInDependency: Dependency {
-    // TODO: Make sure to convert the variable into lower-camelcase.
+    /// view-less 라서 아래와 같이 추가
     var LoggedInViewController: LoggedInViewControllable { get }
-    // TODO: Declare the set of dependencies required by this RIB, but won't be
-    // created by this RIB.
 }
 
 final class LoggedInComponent: Component<LoggedInDependency> {
@@ -21,9 +19,7 @@ final class LoggedInComponent: Component<LoggedInDependency> {
 // MARK: - Builder
 
 protocol LoggedInBuildable: Buildable {
-    func build(withListener listener: LoggedInListener,
-               email: String,
-               password: String) -> LoggedInRouting
+    func build(withListener listener: LoggedInListener) -> LoggedInRouting
 }
 
 final class LoggedInBuilder: Builder<LoggedInDependency>, LoggedInBuildable {
@@ -32,9 +28,7 @@ final class LoggedInBuilder: Builder<LoggedInDependency>, LoggedInBuildable {
         super.init(dependency: dependency)
     }
 
-    func build(withListener listener: LoggedInListener,
-               email: String,
-               password: String) -> LoggedInRouting
+    func build(withListener listener: LoggedInListener) -> LoggedInRouting
     {
         let component = LoggedInComponent(dependency: dependency)
         let interactor = LoggedInInteractor()
