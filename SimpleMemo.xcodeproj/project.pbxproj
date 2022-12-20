@@ -42,6 +42,11 @@
 		E17261F7294AA32A0097437D /* LogInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F4294AA32A0097437D /* LogInRouter.swift */; };
 		E17261F8294AA32A0097437D /* LogInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F5294AA32A0097437D /* LogInBuilder.swift */; };
 		E17261F9294AA32A0097437D /* LogInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17261F6294AA32A0097437D /* LogInInteractor.swift */; };
+		E1816BC029513309004FD406 /* MemosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBB29513309004FD406 /* MemosRouter.swift */; };
+		E1816BC129513309004FD406 /* MemosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1816BBC29513309004FD406 /* MemosViewController.storyboard */; };
+		E1816BC22951330A004FD406 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBD29513309004FD406 /* MemosViewController.swift */; };
+		E1816BC32951330A004FD406 /* MemosBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBE29513309004FD406 /* MemosBuilder.swift */; };
+		E1816BC42951330A004FD406 /* MemosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBF29513309004FD406 /* MemosInteractor.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +105,11 @@
 		E17261F4294AA32A0097437D /* LogInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInRouter.swift; sourceTree = "<group>"; };
 		E17261F5294AA32A0097437D /* LogInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInBuilder.swift; sourceTree = "<group>"; };
 		E17261F6294AA32A0097437D /* LogInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInInteractor.swift; sourceTree = "<group>"; };
+		E1816BBB29513309004FD406 /* MemosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosRouter.swift; sourceTree = "<group>"; };
+		E1816BBC29513309004FD406 /* MemosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemosViewController.storyboard; sourceTree = "<group>"; };
+		E1816BBD29513309004FD406 /* MemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
+		E1816BBE29513309004FD406 /* MemosBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosBuilder.swift; sourceTree = "<group>"; };
+		E1816BBF29513309004FD406 /* MemosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +174,7 @@
 		AC3F04D023C4ED32005ED8E6 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				E1816BBA295132B8004FD406 /* Memos */,
 				C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */,
 				AC3F04D123C4ED50005ED8E6 /* Root */,
 				AC3F04E523C77293005ED8E6 /* LoggedOut */,
@@ -316,6 +327,18 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		E1816BBA295132B8004FD406 /* Memos */ = {
+			isa = PBXGroup;
+			children = (
+				E1816BBB29513309004FD406 /* MemosRouter.swift */,
+				E1816BBC29513309004FD406 /* MemosViewController.storyboard */,
+				E1816BBD29513309004FD406 /* MemosViewController.swift */,
+				E1816BBE29513309004FD406 /* MemosBuilder.swift */,
+				E1816BBF29513309004FD406 /* MemosInteractor.swift */,
+			);
+			path = Memos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +428,7 @@
 				AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */,
 				AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */,
 				AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */,
+				E1816BC129513309004FD406 /* MemosViewController.storyboard in Resources */,
 				AC503E7E23CF5C7700FA1EC2 /* Main.storyboard in Resources */,
 				AC3F052A23CA0004005ED8E6 /* Color.xcassets in Resources */,
 			);
@@ -506,6 +530,7 @@
 				C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */,
 				AC3F04EC23C772BA005ED8E6 /* LoggedOutViewController.swift in Sources */,
 				E17261F7294AA32A0097437D /* LogInRouter.swift in Sources */,
+				E1816BC32951330A004FD406 /* MemosBuilder.swift in Sources */,
 				AC3F04ED23C772BA005ED8E6 /* LoggedOutBuilder.swift in Sources */,
 				AC3F04E423C4F455005ED8E6 /* RootInteractor.swift in Sources */,
 				AC3F04E123C4F455005ED8E6 /* RootRouter.swift in Sources */,
@@ -515,6 +540,7 @@
 				E17261F8294AA32A0097437D /* LogInBuilder.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
 				AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */,
+				E1816BC22951330A004FD406 /* MemosViewController.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
 				C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */,
@@ -523,9 +549,11 @@
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
 				AC3F04EB23C772BA005ED8E6 /* LoggedOutRouter.swift in Sources */,
+				E1816BC029513309004FD406 /* MemosRouter.swift in Sources */,
 				AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
 				E17261F9294AA32A0097437D /* LogInInteractor.swift in Sources */,
+				E1816BC42951330A004FD406 /* MemosInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,11 +16,15 @@ protocol LoggedInViewControllable: ViewControllable {
 final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
     
     private let viewController: LoggedInViewControllable
+    private let memosBuilder: MemosBuilder
     
     // TODO: Constructor inject child builder protocols to allow building children.
     init(interactor: LoggedInInteractable,
-         viewController: LoggedInViewControllable) {
+         viewController: LoggedInViewControllable,
+         memosBuilder: MemosBuilder
+    ) {
         self.viewController = viewController
+        self.memosBuilder = memosBuilder
         super.init(interactor: interactor)
         interactor.router = self
     }

@@ -5,7 +5,7 @@ protocol LoggedInDependency: Dependency {
     var LoggedInViewController: LoggedInViewControllable { get }
 }
 
-final class LoggedInComponent: Component<LoggedInDependency> {
+final class LoggedInComponent: Component<LoggedInDependency>, MemosDependency {
     // TODO: Make sure to convert the variable into lower-camelcase.
     fileprivate var LoggedInViewController: LoggedInViewControllable {
         return dependency.LoggedInViewController
@@ -33,7 +33,10 @@ final class LoggedInBuilder: Builder<LoggedInDependency>, LoggedInBuildable {
         let component = LoggedInComponent(dependency: dependency)
         let interactor = LoggedInInteractor()
         interactor.listener = listener
+        
+        let memosBuilder = MemosBuilder(dependency: component)
         return LoggedInRouter(interactor: interactor,
-                              viewController: component.LoggedInViewController)
+                              viewController: component.LoggedInViewController,
+                              memosBuilder: memosBuilder)
     }
 }
