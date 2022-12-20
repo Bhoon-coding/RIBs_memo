@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController id="vKn-9P-Ny8" customClass="SignUpViewController" customModule="SimpleMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-fh-C2Q">
+                                <rect key="frame" x="20" y="40" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKy-gE-tRQ">
+                                <rect key="frame" x="20" y="158" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kwo-36-nba">
+                                <rect key="frame" x="20" y="81" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSw-pk-TSH">
+                                <rect key="frame" x="20" y="199" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-vx-4rs">
+                                <rect key="frame" x="112.5" y="273" width="150" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XBO-eF-zq2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="MintColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kwo-36-nba" firstAttribute="top" secondItem="lyy-fh-C2Q" secondAttribute="bottom" constant="20" id="19l-tG-13H"/>
+                            <constraint firstItem="lyy-fh-C2Q" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="40" id="1wS-4U-bSt"/>
+                            <constraint firstItem="lyy-fh-C2Q" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" constant="20" id="6LR-Jn-NSg"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="kwo-36-nba" secondAttribute="trailing" constant="20" id="6zP-3M-vMK"/>
+                            <constraint firstItem="aKy-gE-tRQ" firstAttribute="top" secondItem="kwo-36-nba" secondAttribute="bottom" constant="43" id="G0D-Rc-opC"/>
+                            <constraint firstItem="aKy-gE-tRQ" firstAttribute="leading" secondItem="kwo-36-nba" secondAttribute="leading" id="Nnd-kz-ohh"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="bSw-pk-TSH" secondAttribute="trailing" constant="20" id="djf-wJ-OJ9"/>
+                            <constraint firstItem="bSw-pk-TSH" firstAttribute="top" secondItem="aKy-gE-tRQ" secondAttribute="bottom" constant="20" id="mFv-NC-i9U"/>
+                            <constraint firstItem="Lhh-vx-4rs" firstAttribute="centerX" secondItem="HgA-Aw-ocO" secondAttribute="centerX" id="mbZ-Uu-jcK"/>
+                            <constraint firstItem="Lhh-vx-4rs" firstAttribute="top" secondItem="bSw-pk-TSH" secondAttribute="bottom" constant="40" id="n9V-0Q-1eL"/>
+                            <constraint firstItem="kwo-36-nba" firstAttribute="leading" secondItem="lyy-fh-C2Q" secondAttribute="leading" id="ulo-vf-Ahk"/>
+                            <constraint firstItem="bSw-pk-TSH" firstAttribute="leading" secondItem="aKy-gE-tRQ" secondAttribute="leading" id="vBX-Ux-waQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="205"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="MintColor">
+            <color red="0.14117647058823529" green="0.81176470588235294" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

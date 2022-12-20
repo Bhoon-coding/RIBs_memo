@@ -1,6 +1,6 @@
 import RIBs
 
-protocol LoggedInInteractable: Interactable {
+protocol LoggedInInteractable: Interactable, MemosListener {
     var router: LoggedInRouting? { get set }
     var listener: LoggedInListener? { get set }
 }
@@ -36,6 +36,7 @@ final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
     
     override func didLoad() {
         super.didLoad()
+        let momosRouting = memosBuilder.build(withListener: interactor)
     }
     
 }

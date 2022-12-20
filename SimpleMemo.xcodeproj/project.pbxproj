@@ -47,6 +47,11 @@
 		E1816BC22951330A004FD406 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBD29513309004FD406 /* MemosViewController.swift */; };
 		E1816BC32951330A004FD406 /* MemosBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBE29513309004FD406 /* MemosBuilder.swift */; };
 		E1816BC42951330A004FD406 /* MemosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BBF29513309004FD406 /* MemosInteractor.swift */; };
+		E1816BD3295136BE004FD406 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BCE295136BE004FD406 /* SignUpRouter.swift */; };
+		E1816BD4295136BE004FD406 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1816BCF295136BE004FD406 /* SignUpViewController.storyboard */; };
+		E1816BD5295136BE004FD406 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BD0295136BE004FD406 /* SignUpViewController.swift */; };
+		E1816BD6295136BE004FD406 /* SignUpBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BD1295136BE004FD406 /* SignUpBuilder.swift */; };
+		E1816BD7295136BE004FD406 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1816BD2295136BE004FD406 /* SignUpInteractor.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +115,11 @@
 		E1816BBD29513309004FD406 /* MemosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
 		E1816BBE29513309004FD406 /* MemosBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosBuilder.swift; sourceTree = "<group>"; };
 		E1816BBF29513309004FD406 /* MemosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosInteractor.swift; sourceTree = "<group>"; };
+		E1816BCE295136BE004FD406 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		E1816BCF295136BE004FD406 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		E1816BD0295136BE004FD406 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E1816BD1295136BE004FD406 /* SignUpBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBuilder.swift; sourceTree = "<group>"; };
+		E1816BD2295136BE004FD406 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +184,7 @@
 		AC3F04D023C4ED32005ED8E6 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				E1816BC529513694004FD406 /* SignUp */,
 				E1816BBA295132B8004FD406 /* Memos */,
 				C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */,
 				AC3F04D123C4ED50005ED8E6 /* Root */,
@@ -339,6 +350,18 @@
 			path = Memos;
 			sourceTree = "<group>";
 		};
+		E1816BC529513694004FD406 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E1816BCE295136BE004FD406 /* SignUpRouter.swift */,
+				E1816BCF295136BE004FD406 /* SignUpViewController.storyboard */,
+				E1816BD0295136BE004FD406 /* SignUpViewController.swift */,
+				E1816BD1295136BE004FD406 /* SignUpBuilder.swift */,
+				E1816BD2295136BE004FD406 /* SignUpInteractor.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +450,7 @@
 				AC3F04EF23C772BA005ED8E6 /* LoggedOutViewController.xib in Resources */,
 				AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */,
 				AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */,
+				E1816BD4295136BE004FD406 /* SignUpViewController.storyboard in Resources */,
 				AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */,
 				E1816BC129513309004FD406 /* MemosViewController.storyboard in Resources */,
 				AC503E7E23CF5C7700FA1EC2 /* Main.storyboard in Resources */,
@@ -525,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1816BD3295136BE004FD406 /* SignUpRouter.swift in Sources */,
 				C214C78223C8566C00B760DC /* LoggedInBuilder.swift in Sources */,
 				AC3F04EE23C772BA005ED8E6 /* LoggedOutInteractor.swift in Sources */,
 				C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */,
@@ -535,12 +560,15 @@
 				AC3F04E423C4F455005ED8E6 /* RootInteractor.swift in Sources */,
 				AC3F04E123C4F455005ED8E6 /* RootRouter.swift in Sources */,
 				C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */,
+				E1816BD6295136BE004FD406 /* SignUpBuilder.swift in Sources */,
 				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */,
 				E17261F8294AA32A0097437D /* LogInBuilder.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
 				AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */,
+				E1816BD5295136BE004FD406 /* SignUpViewController.swift in Sources */,
 				E1816BC22951330A004FD406 /* MemosViewController.swift in Sources */,
+				E1816BD7295136BE004FD406 /* SignUpInteractor.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
 				C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */,
