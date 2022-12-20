@@ -1,6 +1,6 @@
 import RIBs
 
-protocol LoggedOutInteractable: Interactable {
+protocol LoggedOutInteractable: Interactable, SignUpListener {
     var router: LoggedOutRouting? { get set }
     var listener: LoggedOutListener? { get set }
 }
@@ -12,10 +12,15 @@ protocol LoggedOutViewControllable: ViewControllable {
 
 final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable>, LoggedOutRouting {
     
+    private let signUpBuilder: SignUpBuildable
+    private var signUpRouting: SignUpRouting?
+    
     // TODO: Constructor inject child builder protocols to allow building children.
-    override init(interactor: LoggedOutInteractable,
-                  viewController: LoggedOutViewControllable
-    ) {
+    init(interactor: LoggedOutInteractable,
+         viewController: LoggedOutViewControllable,
+         signUpBuilder: SignUpBuildable)
+    {
+        self.signUpBuilder = signUpBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }

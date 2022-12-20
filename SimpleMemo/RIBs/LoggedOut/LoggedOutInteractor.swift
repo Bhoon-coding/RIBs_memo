@@ -4,6 +4,8 @@ import RxSwift
 
 protocol LoggedOutRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routeToSignUp()
+    func detachSignUp()
 }
 
 protocol LoggedOutPresentable: Presentable {
@@ -13,11 +15,11 @@ protocol LoggedOutPresentable: Presentable {
 
 protocol LoggedOutListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
-    func login(email: String, password: String)
+    func login(email: String)
 }
 
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
-
+    
     weak var router: LoggedOutRouting?
     weak var listener: LoggedOutListener?
 
@@ -42,12 +44,20 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
         FirebaseManager.login(email: email, password: password, completion: { [weak self] result in
             switch result {
             case .success:
-                self?.listener?.login(email: email, password: password)
+                self?.listener?.login(email: email)
             case .failure(let failure):
                 Navigator.presentAlert(with: failure.localizedDescription)
             }
         })
     }
     
+    func navigationBack() {
+        router?.routeToSignUp()
+    }
+    
+    func signupAndLoginDidSuccess(email: String, password: String) {
+        router?.detachSignUp()
+        listener?.login(email: email)
+    }
     
 }

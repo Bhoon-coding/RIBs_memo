@@ -70,6 +70,11 @@
                             <constraint firstItem="bSw-pk-TSH" firstAttribute="leading" secondItem="aKy-gE-tRQ" secondAttribute="leading" id="vBX-Ux-waQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="kwo-36-nba" id="2QZ-zl-hLR"/>
+                        <outlet property="passwordTextField" destination="bSw-pk-TSH" id="if7-U6-D63"/>
+                        <outlet property="signupButton" destination="Lhh-vx-4rs" id="kmB-0F-XIh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
