@@ -37,7 +37,8 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     
     
     func bind() {
-        Observable.combineLatest(emailTextField.rx.text.orEmpty, passwordTextField.rx.base.text.orEmp, resultSelector: <#T##(ObservableType.E, ObservableType.E) throws -> _#>)
+        
+        
     }
     
     @IBAction func tapLoginButton(_ sender: Any) {

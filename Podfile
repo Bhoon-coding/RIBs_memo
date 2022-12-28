@@ -7,7 +7,10 @@ target 'RIBs_memo' do
 
   # Pods for RIBs_memo
   pod 'RIBs', '~> 0.9'
-  pod 'RxCocoa', '~> 5'
+  pod 'RxCocoa'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
   target 'RIBs_memoTests' do
     inherit! :search_paths

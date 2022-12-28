@@ -32,4 +32,16 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         viewController.uiviewController.modalPresentationStyle = .fullScreen
         present(viewController.uiviewController, animated: false, completion: nil)
     }
+    
+    func dismiss(viewController: ViewControllable) {
+        if presentedViewController === viewController.uiviewController {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+}
+
+
+// MARK: - LoggedInViewControllable
+extension RootViewController: LoggedInViewControllable {
+    
 }
