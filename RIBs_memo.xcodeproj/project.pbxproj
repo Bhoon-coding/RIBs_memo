@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		218B8B1DCD0202C3DA7EC4D3 /* Pods_RIBs_memo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82D2FDA95E4D11141A8378 /* Pods_RIBs_memo.framework */; };
 		AF8B59C50A6877828964BB35 /* Pods_RIBs_memoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474BBBFB6D4A549A9803317F /* Pods_RIBs_memoTests.framework */; };
+		E1383115295C319500071F2D /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1383110295C319500071F2D /* LoggedOutRouter.swift */; };
+		E1383116295C319500071F2D /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1383111295C319500071F2D /* LoggedOutViewController.swift */; };
+		E1383117295C319500071F2D /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1383112295C319500071F2D /* LoggedOutBuilder.swift */; };
+		E1383118295C319500071F2D /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1383113295C319500071F2D /* LoggedOutInteractor.swift */; };
+		E1383119295C319500071F2D /* LoggedOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1383114295C319500071F2D /* LoggedOutViewController.xib */; };
 		E18336462940E68E007B4EE7 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336422940E68E007B4EE7 /* RootRouter.swift */; };
 		E18336472940E68E007B4EE7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336432940E68E007B4EE7 /* RootViewController.swift */; };
 		E18336482940E68E007B4EE7 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18336442940E68E007B4EE7 /* RootBuilder.swift */; };
@@ -23,11 +28,6 @@
 		E1BD9341293E3C4900D829C4 /* RIBs_memoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD9340293E3C4900D829C4 /* RIBs_memoTests.swift */; };
 		E1BD934B293E3C4900D829C4 /* RIBs_memoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD934A293E3C4900D829C4 /* RIBs_memoUITests.swift */; };
 		E1BD934D293E3C4900D829C4 /* RIBs_memoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD934C293E3C4900D829C4 /* RIBs_memoUITestsLaunchTests.swift */; };
-		E1E96856293E43C800CDEF61 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E96851293E43C800CDEF61 /* LoggedOutRouter.swift */; };
-		E1E96857293E43C800CDEF61 /* LoggedOutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E96852293E43C800CDEF61 /* LoggedOutViewController.storyboard */; };
-		E1E96858293E43C800CDEF61 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E96853293E43C800CDEF61 /* LoggedOutViewController.swift */; };
-		E1E96859293E43C800CDEF61 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E96854293E43C800CDEF61 /* LoggedOutBuilder.swift */; };
-		E1E9685A293E43C800CDEF61 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E96855293E43C800CDEF61 /* LoggedOutInteractor.swift */; };
 		E1ED900429477EF1007659E7 /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED900329477EF1007659E7 /* LoginTextInputManager.swift */; };
 		E1ED900629478282007659E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ED900529478282007659E7 /* AppDelegate.swift */; };
 		FDAAE1E25711F898A8AB8C42 /* Pods_RIBs_memo_RIBs_memoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F45C6D6A3B1EE9B5212078 /* Pods_RIBs_memo_RIBs_memoUITests.framework */; };
@@ -59,6 +59,11 @@
 		8E32E19E42FC623E8A0098A1 /* Pods-RIBs_memoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIBs_memoTests.debug.xcconfig"; path = "Target Support Files/Pods-RIBs_memoTests/Pods-RIBs_memoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E82D2FDA95E4D11141A8378 /* Pods_RIBs_memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RIBs_memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F45C6D6A3B1EE9B5212078 /* Pods_RIBs_memo_RIBs_memoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RIBs_memo_RIBs_memoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1383110295C319500071F2D /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		E1383111295C319500071F2D /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		E1383112295C319500071F2D /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		E1383113295C319500071F2D /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		E1383114295C319500071F2D /* LoggedOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoggedOutViewController.xib; sourceTree = "<group>"; };
 		E18336422940E68E007B4EE7 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		E18336432940E68E007B4EE7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E18336442940E68E007B4EE7 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
@@ -77,11 +82,6 @@
 		E1BD9346293E3C4900D829C4 /* RIBs_memoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RIBs_memoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BD934A293E3C4900D829C4 /* RIBs_memoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIBs_memoUITests.swift; sourceTree = "<group>"; };
 		E1BD934C293E3C4900D829C4 /* RIBs_memoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIBs_memoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E1E96851293E43C800CDEF61 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
-		E1E96852293E43C800CDEF61 /* LoggedOutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedOutViewController.storyboard; sourceTree = "<group>"; };
-		E1E96853293E43C800CDEF61 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
-		E1E96854293E43C800CDEF61 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
-		E1E96855293E43C800CDEF61 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		E1ED900329477EF1007659E7 /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 		E1ED900529478282007659E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = /Users/bh/Desktop/Dev/iOS/Practice/RIBs_memo/RIBs_memo/AppStart/AppDelegate.swift; sourceTree = "<absolute>"; };
 		EFB2F311F7EFA407A12EB93E /* Pods-RIBs_memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIBs_memo.release.xcconfig"; path = "Target Support Files/Pods-RIBs_memo/Pods-RIBs_memo.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +136,18 @@
 				474BBBFB6D4A549A9803317F /* Pods_RIBs_memoTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E138310F295C318300071F2D /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				E1383110295C319500071F2D /* LoggedOutRouter.swift */,
+				E1383111295C319500071F2D /* LoggedOutViewController.swift */,
+				E1383112295C319500071F2D /* LoggedOutBuilder.swift */,
+				E1383113295C319500071F2D /* LoggedOutInteractor.swift */,
+				E1383114295C319500071F2D /* LoggedOutViewController.xib */,
+			);
+			path = LoggedOut;
 			sourceTree = "<group>";
 		};
 		E18336412940E683007B4EE7 /* Root */ = {
@@ -221,24 +233,12 @@
 			path = RIBs_memoUITests;
 			sourceTree = "<group>";
 		};
-		E1E9685B293E43D900CDEF61 /* LoggedOut */ = {
-			isa = PBXGroup;
-			children = (
-				E1E96851293E43C800CDEF61 /* LoggedOutRouter.swift */,
-				E1E96852293E43C800CDEF61 /* LoggedOutViewController.storyboard */,
-				E1E96853293E43C800CDEF61 /* LoggedOutViewController.swift */,
-				E1E96854293E43C800CDEF61 /* LoggedOutBuilder.swift */,
-				E1E96855293E43C800CDEF61 /* LoggedOutInteractor.swift */,
-			);
-			path = LoggedOut;
-			sourceTree = "<group>";
-		};
 		E1E9685C293E43E200CDEF61 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				E138310F295C318300071F2D /* LoggedOut */,
 				E1ADA3BF295C2689002477DF /* LoggedIn */,
 				E18336412940E683007B4EE7 /* Root */,
-				E1E9685B293E43D900CDEF61 /* LoggedOut */,
 			);
 			path = RIBs;
 			sourceTree = "<group>";
@@ -360,9 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1383119295C319500071F2D /* LoggedOutViewController.xib in Resources */,
 				E1BD9336293E3C4800D829C4 /* LaunchScreen.storyboard in Resources */,
 				E1BD9333293E3C4800D829C4 /* Assets.xcassets in Resources */,
-				E1E96857293E43C800CDEF61 /* LoggedOutViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,19 +492,19 @@
 			files = (
 				E1ADA3C4295C269E002477DF /* LoggedInBuilder.swift in Sources */,
 				E1ED900429477EF1007659E7 /* LoginTextInputManager.swift in Sources */,
+				E1383118295C319500071F2D /* LoggedOutInteractor.swift in Sources */,
+				E1383116295C319500071F2D /* LoggedOutViewController.swift in Sources */,
 				E18336462940E68E007B4EE7 /* RootRouter.swift in Sources */,
 				E18336492940E68E007B4EE7 /* RootInteractor.swift in Sources */,
 				E18336472940E68E007B4EE7 /* RootViewController.swift in Sources */,
 				E183364D2940EA40007B4EE7 /* AppComponent.swift in Sources */,
-				E1E96859293E43C800CDEF61 /* LoggedOutBuilder.swift in Sources */,
 				E1BD932C293E3C4600D829C4 /* SceneDelegate.swift in Sources */,
+				E1383115295C319500071F2D /* LoggedOutRouter.swift in Sources */,
 				E1ED900629478282007659E7 /* AppDelegate.swift in Sources */,
-				E1E96856293E43C800CDEF61 /* LoggedOutRouter.swift in Sources */,
+				E1383117295C319500071F2D /* LoggedOutBuilder.swift in Sources */,
 				E18336482940E68E007B4EE7 /* RootBuilder.swift in Sources */,
 				E1ADA3C3295C269D002477DF /* LoggedInRouter.swift in Sources */,
-				E1E9685A293E43C800CDEF61 /* LoggedOutInteractor.swift in Sources */,
 				E1ADA3C5295C269E002477DF /* LoggedInInteractor.swift in Sources */,
-				E1E96858293E43C800CDEF61 /* LoggedOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

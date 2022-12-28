@@ -2,7 +2,7 @@
 //  LoggedOutInteractor.swift
 //  RIBs_memo
 //
-//  Created by BH on 2022/12/06.
+//  Created by BH on 2022/12/28.
 //
 
 import RIBs
@@ -41,9 +41,5 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
-    }
-    
-    func handleLogin(player1Name: String, player2Name: String) {
-        print(player1Name, player2Name)
     }
 }

@@ -2,7 +2,7 @@
 //  LoggedOutRouter.swift
 //  RIBs_memo
 //
-//  Created by BH on 2022/12/06.
+//  Created by BH on 2022/12/28.
 //
 
 import RIBs
@@ -19,9 +19,7 @@ protocol LoggedOutViewControllable: ViewControllable {
 final class LoggedOutRouter: ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable>, LoggedOutRouting {
 
     // TODO: Constructor inject child builder protocols to allow building children.
-    override init(interactor: LoggedOutInteractable,
-                  viewController: LoggedOutViewControllable
-    ) {
+    override init(interactor: LoggedOutInteractable, viewController: LoggedOutViewControllable) {
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
